@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #dc143c;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: -130px;
+    transition: all 1s 0s;
+}
+
+img {
+    position: absolute;
+    width: 1200px;
+    height: 800px;
+    z-index: -1;
+    display: block;
+    margin-top: 10px;
+    margin-left: 9%;
+}
+
+.code {
+    color: black;
+    background-color: #fff;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 610px;
+    left: 190px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 900;
+    transition: all 1s 0s;
+}
+
+.code:hover {
+    background-color: black;
+    color: #fff;
+    text-shadow: #c5c5c5 1px 1px 5px;
+}
+
+.sign {
+    position: absolute;
+    top: 610px;
+}
+
+.sign a:hover{
+    color: #000;
+}
+
+.sign , .sign a {
+    color: #eee;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    font-weight: 500;
+    right: 190px;
+    transition: all 1s 0s;
+}
+
+.keyboard-base {
+    max-width: 1085px;
+    padding: 20px;
+    margin: 200px auto;
+    background-color: #c5c5c5;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(30, 30px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 5px;
+}
+
+
+.key {
+    background-color: rgb(243, 243, 243);
+    border: 2px solid black;
+    border-radius: 5px;
+    grid-column: span 2;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.key:hover {
+  border: 1px solid #eee;
+}
+
+.delete {
+    grid-column: span 4;
+}
+
+.tab {
+    grid-column: span 3;
+}
+
+.backslash {
+    grid-column: span 3;
+}
+
+.capslock {
+    grid-column: span 4;
+}
+
+.return {
+    grid-column: span 4;
+}
+
+.leftshift {
+    grid-column: span 5;
+}
+
+.rightshift {
+    grid-column: span 5;
+}
+
+.leftctrl {
+    grid-column: span 3;
+}
+
+.command {
+    grid-column: span 3;
+    font-size: 14px;
+}
+
+.space {
+    grid-column: span 13;
+}
